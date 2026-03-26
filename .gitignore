@@ -1,0 +1,7 @@
+#Directory
+.venv/
+__pycache__/
+data/raw
+
+### VS Code ###
+.vscode/

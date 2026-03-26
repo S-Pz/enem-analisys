@@ -2,7 +2,7 @@ import chardet
 import pandas as pd
 
 def loadDataEnem(filePath):
-    row_number = 1000000
+    row_number = 500000
     with open(filePath,'rb') as f:
         result = chardet.detect(f.read(row_number))
     

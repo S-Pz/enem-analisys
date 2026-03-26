@@ -1,3 +1,4 @@
+import os 
 import streamlit as st
 import pandas as pd
 import seaborn as sns
@@ -5,8 +6,10 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Dashboard ENEM - Gestão Pública", layout="wide")
 
-FILE_ENEM_PROCESSED = "../../data/processed/enem_2023_limpo.parquet"
-FILE_PIB_PROCESSED = "../../data/processed/pib_2023_limpo.parquet"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+                           
+FILE_ENEM_PROCESSED = os.path.join(BASE_DIR, "../../data/processed/enem_2023_limpo.parquet")
+FILE_PIB_PROCESSED = os.path.join(BASE_DIR, "../../data/processed/pib_2023_limpo.parquet")
 
 @st.cache_data
 def carregar_dados_dashboard():

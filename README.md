@@ -50,7 +50,7 @@ Os dados brutos do ENEM e do IBGE são pesados (a base do ENEM possui cerca de 2
 
 ### 3. Processamento dos Dados
 
-Devido ao tamanho das bases e para "facilitar" a hospedagem e a performance da análise, **os dados foram limitados na extração (cerca de 300.000 de linhas iniciais)**.
+Devido ao tamanho das bases e para "facilitar" a hospedagem e a performance da análise, **os dados foram limitados na extração (cerca de 100.000 de linhas iniciais)**.
 
 Para limpar, transformar e gerar os arquivos otimizados `.parquet`, execute:
 
